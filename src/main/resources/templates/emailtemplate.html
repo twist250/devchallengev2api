@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+
+  <img src="https://www.w3schools.com/images/w3schools_green.jpg" height="400" width="900"/>
+  <div>Receipt key: <span th:text="${receipt}"></span></div>
+  <div>Thanks for being with us...</div>
+  <table class="table" border="1px" style="border-collapse: collapse">
+    <tbody>
+    <tr>
+      <td colspan="2" bgcolor="#a9a9a9">House Information</td>
+    </tr>
+    <tr>
+      <td>Location:</td>
+      <td th:text="${house.location}"></td>
+    </tr>
+    <tr>
+      <td>Latitude:</td>
+      <td th:text="${house.latitude}"></td>
+    </tr>
+    <tr>
+      <td>Longitude:</td>
+      <td th:text="${house.longitude}"></td>
+    </tr>
+    <tr>
+      <td>Owner:</td>
+      <td th:text="${house.user.firstName+' '+house.user.lastName}"></td>
+    </tr>
+
+    <tr>
+      <td colspan="2" bgcolor="#a9a9a9">Payment Information</td>
+    </tr>
+    <tr>
+      <td>Payment Method</td>
+      <td>Handed Money</td>
+    </tr>
+    <tr>
+      <td>Price</td>
+      <td>2000</td>
+    </tr>
+
+
+    <tr bgcolor="#008b8b">
+      <td>Total</td>
+      <td>2000</td>
+    </tr>
+    </tbody>
+  </table>
+  <div>If you have a problem .... !!!VA T F F!!!</div>
+
+</div>
+</body>
+</html>
