@@ -1,8 +1,13 @@
 package com.devchallengev2.devapi;
 
+import com.devchallengev2.devapi.domains.Agent;
+import com.devchallengev2.devapi.domains.Gender;
+import com.devchallengev2.devapi.domains.House;
+import com.devchallengev2.devapi.domains.User;
 import com.devchallengev2.devapi.repositories.AgentRepository;
 import com.devchallengev2.devapi.repositories.HouseRepository;
 import com.devchallengev2.devapi.repositories.UserRepository;
+import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -24,7 +29,7 @@ public class DevapiApplication implements CommandLineRunner {
 
   @Override
   public void run(String... args) throws Exception {
-        /*User user = new User();
+      /*  User user = new User();
         user.setEmail("irpezzi01");
         user.setFirstName("Olivier");
         user.setLastName("twist");
